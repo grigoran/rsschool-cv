@@ -1,6 +1,6 @@
 ## Personal information and contacs
-* Name Igor Minaev
-* Email igormin81@mail.ru
+* Name: Igor Minaev
+* Email: igormin81@mail.ru
 * Phone number: +7-917-114-5515
 * Discord: grigoran#7524
 ## About
