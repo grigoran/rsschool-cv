@@ -1,13 +1,13 @@
-##Personal information and contacs
+## Personal information and contacs
 * Name Igor Minaev
 * Email igormin81@mail.ru
 * Phone number: +7-917-114-5515
 * Discord: grigoran#7524
-##About
+## About
 At this moment, code is my hobby. I don't have any commercial experience with coding, but i enjoy it and want to make it my profession.
 I always educate myself and try to improve my skills in programming field. I can easily find information, required to solve any tasks.
 In this way, i want to work in this industry.
-##Skills
+## Skills
 * js/HTML/css
     * BEM
 * c++
@@ -18,7 +18,7 @@ In this way, i want to work in this industry.
 * QtCreator
 * linux terminal
 
-##Code examples
+## Code examples
 ```c++
 //code fragment from https://github.com/grigoran/Dots.git
 bool Dot::findPath(Node *node, Node *start, int num) {
@@ -87,10 +87,10 @@ slider__arrow.item(1).addEventListener("click", () => {
 });
 ```
 
-##Projects
+## Projects
 * [Own website](https://github.com/grigoran/portfolioSite.git)
 * [Dots game writen on c++/sfml](https://github.com/grigoran/Dots.git)
 
-##Languages
+## Languages
 * Russian: native
 * English: B2
