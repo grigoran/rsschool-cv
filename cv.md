@@ -93,4 +93,4 @@ slider__arrow.item(1).addEventListener("click", () => {
 
 ## Languages
 * Russian: native
-* English: B2
+* English: A2
