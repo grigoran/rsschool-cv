@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <img alt="My photo" src="photo.jpg" />;
+        <h1>Igor Minaev</h1>
+        <ul>
+          <li>Email: igormin81@mail.ru</li>
+          <li>Phone number: +7-917-114-5515</li>
+          <li>Discord: grigoran#7524</li>
+        </ul>
+      </header>
+      <div class="cv-content">
+        <section class="about">
+          <h2>About</h2>
+          <p>
+            At this moment, code is my hobby. I don’t have any commercial
+            experience with coding, but i enjoy it and want to make it my
+            profession. I always educate myself and try to improve my skills in
+            programming field. I can easily find information, required to solve
+            any tasks. In this way, i want to work in this industry.
+          </p>
+        </section>
+        <section class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              <h3>js/HTML/css</h3>
+              <ul>
+                <li>BEM</li>
+              </ul>
+            </li>
+            <li>
+              <h3>C++</h3>
+              <ul>
+                <li>sfml</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Development tools</h3>
+              <ul>
+                <li>Visual Studio</li>
+                <li>Visual Studio Code</li>
+                <li>QtCreator</li>
+                <li>makefile</li>
+                <li>g++ compiler</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Operating systems</h3>
+              <ul>
+                <li>Linux</li>
+                <li>Windows</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="code-examples">
+          <h2>Code examples</h2>
+          <pre class="code-fragment_cpp">
+            <code class="code-fragment_cpp">
+            //code fragment from https://github.com/grigoran/Dots.git
+            bool Dot::findPath(Node *node, Node *start, int num) {
+              sf::Vector2i index = node->getIndex();
+              Node *getedNode;
+              node->mark();
+              for (int i = 0; i &lt; 8; i++) {
+                getedNode = nodes.get(index, i);
+                if (getedNode == start && num > 2) {
+                  node->conect(node, getedNode);
+                  node->unmark();
+                  return true;
+                }
+                if (getedNode->Team() == start->Team() && !getedNode->isConected() &&
+                    !getedNode->isMarked()) {
+                  if (findPath(getedNode, start, num + 1)) {
+                    node->conect(node, getedNode);
+                    node->unmark();
+                    return true;
+                  }
+                }
+              }
+              node->unmark();
+              return false;
+            }
+          </code>
+          <code class="code-fragment_js">
+            //code fragment from https://github.com/grigoran/portfolioSite.git
+            let slider__circles = document.querySelectorAll(".slider__circle");
+            slider__circles[0].style["r"] = 5;
+            
+            let slider__images = document.querySelector(".slider__images");
+            let slider__image = document.querySelectorAll(".slider__image");
+            let imageCount = slider__image.length;
+            let slider__arrow = document.querySelectorAll(".slider__arrow");
+            let nowImage = 0;
+            let offset = 0;
+            
+            
+            
+            slider__images.style.width = imageCount * 300 + "px";
+            
+            document.addEventListener("DOMContentLoaded", () => {
+                setTimeout(() => {
+                    slider__arrow.item(0).style.opacity = "0%";
+                    slider__arrow.item(1).style.opacity = "0%";
+                }, 350)
+            })
+            function getIndex(index) {
+                return ((index + imageCount) % imageCount);
+            }
+            
+            slider__arrow.item(0).addEventListener("click", () => {
+                slider__circles[nowImage].style["r"] = 3;
+                nowImage = getIndex(nowImage - 1);
+                slider__circles[nowImage].style["r"] = 5;
+                offset = -nowImage * 300;
+                slider__images.style["margin-left"] = offset + "px";
+            });
+            slider__arrow.item(1).addEventListener("click", () => {
+                slider__circles[nowImage].style["r"] = 3;
+                nowImage = getIndex(nowImage + 1);
+                slider__circles[nowImage].style["r"] = 5;
+                offset = -nowImage * 300;
+                slider__images.style["margin-left"] = offset + "px";
+            });
+            
+          </code>
+        </pre>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
