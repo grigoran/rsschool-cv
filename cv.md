@@ -88,7 +88,6 @@ slider__arrow.item(1).addEventListener("click", () => {
 ```
 
 ## Projects
-* [Own website](https://github.com/grigoran/portfolioSite.git)
 * [Dots game writen on c++/sfml](https://github.com/grigoran/Dots.git)
 
 ## Languages

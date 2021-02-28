@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="cv-main">
-      <header class="main-header">
+    <header>
+      <div class="wrapper header-wrap">
         <img class="photo" src="im.jpg" alt="My photo" />
         <section class="personal-information">
           <h1 class="person-name">Igor Minaev</h1>
@@ -17,8 +17,10 @@
             <li>Discord: grigoran#7524</li>
           </ul>
         </section>
-      </header>
-      <div class="cv-content">
+      </div>
+    </header>
+    <main class="cv-main">
+      <div class="wrapper main-wrap">
         <section class="about">
           <h2>About</h2>
           <p>
@@ -153,7 +155,24 @@ slider__arrow.item(1).addEventListener("click", () => {
           </ul>
         </section>
       </div>
-      <footer></footer>
+      <footer>
+        <div class="wrapper footer-wrap">
+          <div class="footer-frame">
+            <a href="https://rs.school/js/" class="rs-logo">
+              <img src="/svg/rs_school_js.svg" alt="rss-logo" />
+            </a>
+            <h4 class="year">2021</h4>
+            <div class="social-links">
+              <a href="https://github.com/grigoran" class="social-link">
+                <img src="/svg/github.svg" alt="github" />
+              </a>
+              <a href="" class="social-link">
+                <img src="/svg/yt-icon.svg" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
