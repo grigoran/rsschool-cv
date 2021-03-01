@@ -93,10 +93,11 @@ body {
   align-content: center;
   transition: ease-out 125ms;
 }
-.social-link:hover {
-  opacity: 50%;
-}
 
 a {
   color: rgb(216, 213, 213);
+}
+
+a:hover {
+  opacity: 50%;
 }
