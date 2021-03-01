@@ -53,7 +53,18 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: rgb(69, 99, 189);
-  padding: 10px;
+  padding: 20px;
+}
+
+.footer-frame {
+  background-color: rgb(27, 25, 25);
+  padding: 0 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .rs-logo {
@@ -75,18 +86,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-basis: 150px;
-}
-
-.footer-frame {
-  background-color: rgb(27, 25, 25);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 5px 5px;
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
 }
 
 .social-link {
