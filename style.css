@@ -1,22 +1,24 @@
 body {
   background-color: rgb(34, 33, 33);
-}
-.cv-main {
-  margin: auto;
-
-  max-width: 900px;
-
   font: 16pt sans-serif;
   color: rgb(216, 213, 213);
 }
 
-.main-header {
+.wrapper {
+  margin: auto;
+  max-width: 900px;
   padding: 20px;
-  height: 420px;
-  display: flex;
-
-  background-color: rgb(69, 99, 189);
   border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.header-wrap {
+  background-color: rgb(69, 99, 189);
+  display: flex;
+}
+
+.main-wrap {
+  background-color: rgb(27, 25, 25);
 }
 
 .personal-information {
@@ -41,20 +43,61 @@ body {
   text-align: center;
 }
 
-.cv-content {
-  padding: 20px;
-  margin-top: 10px;
-
-  border-radius: 20px;
-  background-color: rgb(27, 25, 25);
-}
-
 .code-fragment_cpp,
 .code-fragment_js {
   font-family: "DejaVu Sans Mono";
   font-size: 14pt;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(69, 99, 189);
+  padding: 20px;
+}
+
+.footer-frame {
+  background-color: rgb(27, 25, 25);
+  padding: 0 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.rs-logo {
+  width: 125px;
+  transition: ease-out 125ms;
+  display: flex;
+  align-content: center;
+}
+
+.rs-logo:hover {
+  opacity: 50%;
+}
+
+.year {
+  font-size: 20pt;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 150px;
+}
+
+.social-link {
+  display: flex;
+  align-content: center;
+  transition: ease-out 125ms;
+}
+
 a {
   color: rgb(216, 213, 213);
+}
+
+a:hover {
+  opacity: 50%;
 }
